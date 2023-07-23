@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.3](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.2...v0.0.3) - 2023-07-23
+- Fix typo by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/6
+
 ## [v0.0.2](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.1...v0.0.2) - 2023-07-23
 - Fix SyntaxError by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/4
 
