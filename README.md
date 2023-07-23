@@ -11,7 +11,7 @@
 ## Installation
 
 ```console
-npm i @k2tzumi/slidev-addon-qrcode
+npm i @katzumi/slidev-addon-qrcode
 ```
 
 ## Slidev Configuration
@@ -22,7 +22,7 @@ In your slides metadata (using Front Matter):
 
 ```yaml
 addons:
-  - @k2tzumi/slidev-addon-qrcode
+  - @katzumi/slidev-addon-qrcode
 ```
 
 Or in your `package.json`:
@@ -30,7 +30,7 @@ Or in your `package.json`:
 {
   "slidev": {
     "addons": [
-      "@k2tzumi/slidev-addon-qrcode"
+      "@katzumi/slidev-addon-qrcode"
     ]
   }
 }
