@@ -5,3 +5,4 @@ example.md
 Makefile
 .github
 public
+*.tgz
