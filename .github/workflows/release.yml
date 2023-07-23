@@ -28,6 +28,11 @@ jobs:
           always-auth: true
           scope: '@katzumi'
       - run: npm pack
+      - name: Get assets file name
+        id: get-assets-file-name
+        run: |
+          assets=$(npm pack --json | jq -r '.filename')
+          echo "packFile=${assets}"" >> $GITHUB_OUTPUT
       - name: Upload Release Asset
         uses: actions/github-script@v6
         with:
@@ -40,7 +45,7 @@ jobs:
               repo: context.repo.repo,
               tag: context.payload.inputs.tag
             });
-            const packFile = context.repo.owner + '-' + context.repo.repo + '-' + context.payload.inputs.tag + '.tgz';
+            const packFile = github.context.payload.outputs['get-assets-file-name.packFile'];
             const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), packFile);
             const fileContent = fs.readFileSync(filePath);
             await github.rest.repos.uploadReleaseAsset({
