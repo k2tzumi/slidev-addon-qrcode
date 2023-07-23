@@ -22,7 +22,7 @@ In your slides metadata (using Front Matter):
 
 ```yaml
 addons:
-  - @katzumi/slidev-addon-qrcode
+  - "@katzumi/slidev-addon-qrcode"
 ```
 
 Or in your `package.json`:
@@ -43,7 +43,13 @@ You can create a poll by using the [QRCode component](#QRCode).
 ### QRCode
 
 ```xml
-<QRCode  value="https://github.com/k2tzumi/slidev-addon-qrcode" width="180" height="180" color="4329B9" image="83095831.png" />
+<QRCode
+  value="https://github.com/k2tzumi/slidev-addon-qrcode"
+  width="180"
+  height="180"
+  color="4329B9"
+  image="83095831.png"
+/>
 ```
 
 Parameters:
