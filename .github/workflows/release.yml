@@ -23,6 +23,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          registry-url: 'https://registry.npmjs.org'
+          always-auth: true
+          scope: '@k2tzumi'
       - run: npm pack
       - name: Upload Release Asset
         uses: actions/github-script@v6
