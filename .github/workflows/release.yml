@@ -1,0 +1,56 @@
+name: Upload realease slidev pdf and deploying static content to GitHub Pages
+on:
+  # dispatch from tagpr.yml workflow
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: false
+        default: 'v.0.0.0'
+        description: 'Specify release tag'
+jobs:
+  npm-publish-job:
+    name: Upload Release assets and npm publish.
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    # Sets permissions of the GITHUB_TOKEN to allow deployment
+    permissions:
+      contents: write # Upload Release assets
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm pack
+      - name: Upload Release Asset
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const release = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: context.payload.inputs.tag
+            });
+            cost packFile = context.repo.owner + '-' + context.repo.repo + '-' + context.payload.inputs.tag + '.tgz'
+            const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), packFile);
+            const fileContent = fs.readFileSync(filePath);
+            await github.rest.repos.uploadReleaseAsset({
+              url: release.data.upload_url,
+              headers: {
+                'content-type': 'application/octet-stream',
+                'content-length': fileContent.length,
+              },
+              name: packFile,
+              data: fileContent,
+            });
+
+      - name: npm publish
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
