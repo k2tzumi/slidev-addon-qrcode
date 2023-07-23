@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+dist
+docs
+*.local
+index.html
+.remote-assets
+components.d.ts
+slides-export.pdf
+slides-export-notes.pdf
+k2tzumi-slidev-addon-qrcode-v*.tgz

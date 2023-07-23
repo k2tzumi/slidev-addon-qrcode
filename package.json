@@ -1,0 +1,35 @@
+{
+  "name": "@k2tzumi/slidev-addon-qrcode",
+  "version": "v0.0.1",
+  "description": "Slidev add-on qrcode component",
+  "engines": {
+    "node": ">=14.0.0",
+    "slidev": ">=0.32.1"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2tzumi/slidev-addon-qrcode.git"
+  },
+  "keywords": [
+    "slidev-addon",
+    "slidev"
+  ],
+  "dependencies": {
+    "qrcode-vue3": "^1.6.8"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.42.5",
+    "@slidev/theme-default": "^0.21.2",
+    "playwright-chromium": "^1.36.1"
+  },
+  "bugs": {
+    "url": "https://github.com/k2tzumi/slidev-addon-qrcode/issues"
+  },
+  "homepage": "https://github.com/k2tzumi/slidev-addon-qrcode#readme"
+}
