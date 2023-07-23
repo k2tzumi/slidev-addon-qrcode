@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.10](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.9...v0.0.10) - 2023-07-23
+- Fix `Cannot read properties of undefined (reading 'payload')` by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/21
+
 ## [v0.0.9](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.8...v0.0.9) - 2023-07-23
 - Fix `unexpected EOF while looking for matching `"'` by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/19
 
