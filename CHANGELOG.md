@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.7](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.6...v0.0.7) - 2023-07-23
+- Fix upload release assets by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/15
+
 ## [v0.0.6](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.5...v0.0.6) - 2023-07-23
 - Change scopse by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/12
 - Fix scope name by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/14
