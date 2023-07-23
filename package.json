@@ -1,5 +1,5 @@
 {
-  "name": "@k2tzumi/slidev-addon-qrcode",
+  "name": "@katzumi/slidev-addon-qrcode",
   "version": "v0.0.5",
   "description": "Slidev add-on qrcode component",
   "engines": {
