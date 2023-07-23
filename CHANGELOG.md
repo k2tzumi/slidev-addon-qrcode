@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.9](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.8...v0.0.9) - 2023-07-23
+- Fix `unexpected EOF while looking for matching `"'` by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/19
+
 ## [v0.0.8](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.7...v0.0.8) - 2023-07-23
 - Fix `jq: error (at <stdin>:46): Cannot index array with string "filen… by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/17
 
