@@ -36,7 +36,7 @@ jobs:
               repo: context.repo.repo,
               tag: context.payload.inputs.tag
             });
-            cost packFile = context.repo.owner + '-' + context.repo.repo + '-' + context.payload.inputs.tag + '.tgz'
+            cost packFile = context.repo.owner + '-' + context.repo.repo + '-' + context.payload.inputs.tag + '.tgz';
             const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), packFile);
             const fileContent = fs.readFileSync(filePath);
             await github.rest.repos.uploadReleaseAsset({
