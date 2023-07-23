@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.5](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.4...v0.0.5) - 2023-07-23
+- Specify the scope. by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/10
+
 ## [v0.0.4](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.3...v0.0.4) - 2023-07-23
 - Fix `402 Payment Required` by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/8
 
