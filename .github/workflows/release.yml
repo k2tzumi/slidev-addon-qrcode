@@ -1,4 +1,4 @@
-name: Upload realease slidev pdf and deploying static content to GitHub Pages
+name: Upload Release assets and npm publish.
 on:
   # dispatch from tagpr.yml workflow
   workflow_dispatch:
@@ -52,5 +52,5 @@ jobs:
       - name: npm publish
         uses: JS-DevTools/npm-publish@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.NPM_TOKEN }}
 
