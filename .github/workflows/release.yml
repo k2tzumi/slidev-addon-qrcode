@@ -31,7 +31,7 @@ jobs:
       - name: Get assets file name
         id: get-assets-file-name
         run: |
-          assets=$(npm pack --json | jq -r '.filename')
+          assets=$(npm pack --json | jq -r '.[0].filename' | sed 's/^$//' )
           echo "packFile=${assets}"" >> $GITHUB_OUTPUT
       - name: Upload Release Asset
         uses: actions/github-script@v6
