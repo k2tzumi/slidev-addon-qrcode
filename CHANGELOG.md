@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.11](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.10...v0.0.11) - 2023-07-23
+- ignore example-export by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/23
+
 ## [v0.0.10](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.9...v0.0.10) - 2023-07-23
 - Fix `Cannot read properties of undefined (reading 'payload')` by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/21
 
