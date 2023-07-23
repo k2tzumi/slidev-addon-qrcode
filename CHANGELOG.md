@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.8](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.7...v0.0.8) - 2023-07-23
+- Fix `jq: error (at <stdin>:46): Cannot index array with string "filen… by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/17
+
 ## [v0.0.7](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.6...v0.0.7) - 2023-07-23
 - Fix upload release assets by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/15
 
