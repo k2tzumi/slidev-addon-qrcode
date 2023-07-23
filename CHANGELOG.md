@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.0.6](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.5...v0.0.6) - 2023-07-23
+- Change scopse by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/12
+- Fix scope name by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/14
+
 ## [v0.0.5](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.4...v0.0.5) - 2023-07-23
 - Specify the scope. by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/10
 
