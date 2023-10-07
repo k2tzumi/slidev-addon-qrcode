@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.0.13](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.12...v0.0.13) - 2023-10-07
+
 ## [v0.0.12](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.11...v0.0.12) - 2023-07-23
 - Fix addon settings by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/25
 
