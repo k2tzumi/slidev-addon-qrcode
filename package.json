@@ -24,9 +24,9 @@
     "qrcode-vue3": "^1.6.8"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.42.5",
+    "@slidev/cli": "^0.43.6",
     "@slidev/theme-default": "^0.21.2",
-    "playwright-chromium": "^1.36.1"
+    "playwright-chromium": "^1.38.1"
   },
   "bugs": {
     "url": "https://github.com/k2tzumi/slidev-addon-qrcode/issues"
