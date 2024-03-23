@@ -1,6 +1,6 @@
 {
   "name": "@katzumi/slidev-addon-qrcode",
-  "version": "v0.0.13",
+  "version": "v0.0.14",
   "description": "Slidev add-on qrcode component",
   "engines": {
     "node": ">=18.0.0",
