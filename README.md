@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-- [qrcode-vue3](https://github.com/scholtz/qrcode-vue3)
+- [styled-qr-code](https://www.npmjs.com/package/styled-qr-code)
 
 ## Installation
 

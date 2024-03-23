@@ -1,39 +1,19 @@
 <template>
-  <QRCodeVue3
-    :width="width"
-    :height="height"
-    :value="value"
-    :qr-options="{ errorCorrectionLevel: 'H' }"
-    :image-options="{ hideBackgroundDots: true, margin: 5 }"
-    :cornersSquareOptions="{ type: 'extra-rounded', color: '#' + color }"
-    :cornersDotOptions="{ type: 'square', color: '#' + color }"
-    :dots-options="{ type: 'square', color: '#' + color , gradient: { type: 'linear', rotation: 0, colorStops: [ { offset: 0, color: '#'  + color }, { offset: 1, color: '#' + offsetColor } ] } }"
-    :image="image"
-  />
+  <div class="qrcode_container" ref="qrCodeRef"></div>
 </template>
 
-<script setup lang="ts">
-import { defineComponent, computed } from 'vue'
-import QRCodeVue3 from 'qrcode-vue3'
+<script lang="ts" setup>
+import QRCodeStyling, { Options } from 'styled-qr-code';
+import { watch, computed, onMounted, ref } from 'vue';
 
-export interface Props {
-  value: string,
-  color: string,
-  width: number,
-  height: number,
-  image: string,
-}
+const qrCodeRef: any = ref(null);
 
-const props = withDefaults(defineProps<Props>(), {
-  width: 200,
-  height: 200,
-  color: "000000",
-});
-
-defineComponent({
-  components: {
-    QRCodeVue3
-  }
+const props = defineProps({
+  value: String,
+  color: String,
+  width: String,
+  height: String,
+  image: String,
 });
 
 const offsetColor = computed<string>(() => {
@@ -50,4 +30,63 @@ const offsetColor = computed<string>(() => {
     ('0' + (g || 0).toString(16)).slice(-2) +
     ('0' + (b || 0).toString(16)).slice(-2);
 });
+
+const options: Options = {
+  width: props.width,
+  height: props.height,
+  type: 'svg',
+  data: props.value,
+  image: props.image,
+  margin: 10,
+  qrOptions: {
+    typeNumber: 0,
+    mode: 'Byte',
+    errorCorrectionLevel: 'H',
+  },
+  imageOptions: {
+    hideBackgroundDots: true,
+    margin: 5,
+    crossOrigin: 'anonymous',
+  },
+  cornersSquareOptions: {
+    type: 'extra-rounded',
+    color: '#' + props.color
+  },
+  cornersDotOptions: {
+    type: 'square',
+    color: '#' + props.color
+  },
+  dotsOptions: {
+    type: 'square',
+    color: '#' + props.color,
+    gradient: {
+      type: 'linear',
+      rotation: 0,
+      colorStops: [
+        {
+          offset: 0,
+          color: '#' + props.color
+        },
+        {
+          offset: 1,
+          color: '#' + offsetColor
+        }
+      ]
+    }
+  },
+};
+
+const qrCode = new QRCodeStyling(options);
+
+onMounted(async () => {
+  qrCode.append(qrCodeRef.value);
+});
+
+watch(
+  () => props.data,
+  (newValue) => {
+    qrCode.update({ ...options, value: newValue });
+  },
+);
+
 </script>
