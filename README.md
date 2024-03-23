@@ -45,8 +45,8 @@ You can create a poll by using the [QRCode component](#QRCode).
 ```xml
 <QRCode
   value="https://github.com/k2tzumi/slidev-addon-qrcode"
-  width="180"
-  height="180"
+  :width="180"
+  :height="180"
   color="4329B9"
   image="83095831.png"
 />
