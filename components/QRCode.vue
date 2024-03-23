@@ -8,12 +8,18 @@ import { watch, computed, onMounted, ref } from 'vue';
 
 const qrCodeRef: any = ref(null);
 
-const props = defineProps({
-  value: String,
-  color: String,
-  width: String,
-  height: String,
-  image: String,
+export interface Props {
+  value: string,
+  color: string,
+  width: number,
+  height: number,
+  image: string,
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  width: 200,
+  height: 200,
+  color: "000000",
 });
 
 const offsetColor = computed<string>(() => {
@@ -83,9 +89,9 @@ onMounted(async () => {
 });
 
 watch(
-  () => props.data,
+  () => props.value,
   (newValue) => {
-    qrCode.update({ ...options, value: newValue });
+    qrCode.update({ ...options, data: newValue });
   },
 );
 
