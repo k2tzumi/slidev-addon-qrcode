@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.15](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.14...v0.0.15) - 2024-03-23
+- Fix default by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/31
+
 ## [v0.0.14](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.13...v0.0.14) - 2024-03-23
 - Bump up slidev by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/29
 
