@@ -51,7 +51,6 @@ const options: Options = {
   },
   imageOptions: {
     hideBackgroundDots: true,
-    margin: 5,
     crossOrigin: 'anonymous',
   },
   cornersSquareOptions: {
@@ -63,7 +62,7 @@ const options: Options = {
     color: '#' + props.color
   },
   dotsOptions: {
-    type: 'square',
+    type: 'rounded',
     color: '#' + props.color,
     gradient: {
       type: 'linear',
