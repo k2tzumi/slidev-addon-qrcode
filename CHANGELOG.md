@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.16](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.15...v0.0.16) - 2024-03-24
+- Add vite config by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/33
+
 ## [v0.0.15](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.14...v0.0.15) - 2024-03-23
 - Fix default by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/31
 
