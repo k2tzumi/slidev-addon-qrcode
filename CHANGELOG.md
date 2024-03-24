@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.17](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.16...v0.0.17) - 2024-03-24
+- Use rounded type by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/35
+
 ## [v0.0.16](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.15...v0.0.16) - 2024-03-24
 - Add vite config by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/33
 
