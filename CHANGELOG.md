@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.18](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.17...v0.0.18) - 2024-10-31
+- bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/37
+
 ## [v0.0.17](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.16...v0.0.17) - 2024-03-24
 - Use rounded type by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/35
 
