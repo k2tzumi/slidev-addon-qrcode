@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.0.19](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.18...v0.0.19) - 2026-05-06
+- fix: update npm publish step and streamline package versioning by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/40
+- feat: update version to v0.0.18 and add npm install command to tagpr config by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/42
+
 ## [v0.0.18](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.17...v0.0.18) - 2026-05-06
 - bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/37
 - Fix offset color by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/39
