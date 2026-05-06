@@ -10,16 +10,17 @@ const qrCodeRef: any = ref(null);
 
 export interface Props {
   value: string,
-  color: string,
-  width: number,
-  height: number,
-  image: string,
+  color?: string,
+  width?: number,
+  height?: number,
+  image?: string,
 }
 
 const props = withDefaults(defineProps<Props>(), {
   width: 200,
   height: 200,
-  color: "000000",
+  color: '000000',
+  image: '',
 });
 
 const offsetColor = computed<string>(() => {
@@ -74,7 +75,7 @@ const options: Options = {
         },
         {
           offset: 1,
-          color: '#' + offsetColor
+          color: '#' + offsetColor.value
         }
       ]
     }
