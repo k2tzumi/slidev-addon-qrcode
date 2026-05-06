@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.0.18](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.17...v0.0.18) - 2026-05-06
+- bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/37
+- Fix offset color by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/39
+
 ## [v0.0.17](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.16...v0.0.17) - 2024-03-24
 - Use rounded type by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/35
 
