@@ -18,3 +18,4 @@
 	vPrefix = true
 	releaseBranch = main
 	versionFile = package.json
+	command = npm install --package-lock-only
