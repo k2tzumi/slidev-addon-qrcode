@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.0.21](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.20...v0.0.21) - 2026-10-11
+
+- Bump actions/setup-node from 4 to 7 by @dependabot[bot] in https://github.com/k2tzumi/slidev-addon-qrcode/pull/47
+- Bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/k2tzumi/slidev-addon-qrcode/pull/48
+- Bump actions/github-script from 7 to 9 by @dependabot[bot] in https://github.com/k2tzumi/slidev-addon-qrcode/pull/49
+- Bump playwright-chromium from 1.59.1 to 1.63.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-addon-qrcode/pull/50
+- Bump @slidev/cli from 52.15.0 to 53.0.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-addon-qrcode/pull/51
+- Bump sass from 1.99.0 to 1.105.1 by @dependabot[bot] in https://github.com/k2tzumi/slidev-addon-qrcode/pull/52
+- bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/53
+
 ## [v0.0.20](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.19...v0.0.20) - 2026-05-06
 - fix: add npm authentication verification and update environment variable by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/43
 
