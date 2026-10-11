@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.1](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.1.0...v0.1.1) - 2026-10-11
+
+- fix: delete existing release assets before uploading new ones by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/57
+
 ## [v0.1.0](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.21...v0.1.0) - 2026-10-11
 
 - feat: add offsetColor parameter to QRCode component and update example by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/55
