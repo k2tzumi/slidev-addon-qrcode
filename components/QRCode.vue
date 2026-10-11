@@ -11,6 +11,7 @@ const qrCodeRef: any = ref(null);
 export interface Props {
   value: string,
   color?: string,
+  offsetColor?: string,
   width?: number,
   height?: number,
   image?: string,
@@ -23,11 +24,13 @@ const props = withDefaults(defineProps<Props>(), {
   image: '',
 });
 
-const offsetColor = computed<string>(() => {
+const computedOffsetColor = computed<string>(() => {
   const percent = 85;
-  let r = parseInt(props.color.slice(1, 3), 16),
-    g = parseInt(props.color.slice(3, 5), 16),
-    b = parseInt(props.color.slice(5, 7), 16);
+  const normalizedColor = props.color.startsWith('#') ? props.color.slice(1) : props.color;
+
+  let r = parseInt(normalizedColor.slice(0, 2), 16),
+    g = parseInt(normalizedColor.slice(2, 4), 16),
+    b = parseInt(normalizedColor.slice(4, 6), 16);
 
   r = Math.round(r * (100 - percent) / 100);
   g = Math.round(g * (100 - percent) / 100);
@@ -36,6 +39,10 @@ const offsetColor = computed<string>(() => {
   return ('0' + (r || 0).toString(16)).slice(-2) +
     ('0' + (g || 0).toString(16)).slice(-2) +
     ('0' + (b || 0).toString(16)).slice(-2);
+});
+
+const resolvedOffsetColor = computed<string>(() => {
+  return props.offsetColor || computedOffsetColor.value;
 });
 
 const options: Options = {
@@ -75,7 +82,7 @@ const options: Options = {
         },
         {
           offset: 1,
-          color: '#' + offsetColor.value
+          color: '#' + resolvedOffsetColor.value
         }
       ]
     }

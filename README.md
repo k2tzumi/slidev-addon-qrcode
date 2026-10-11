@@ -48,14 +48,15 @@ You can create a poll by using the [QRCode component](#QRCode).
   :width="180"
   :height="180"
   color="4329B9"
+  offsetColor="A18AF0"
   image="83095831.png"
 />
 ```
 
 Parameters:
-* `value` (`string`) : The date will be encoded to the QR code
-* `width` (`number` , default `200`)  : Size of canvas
-* `height` (`number` , default `200`)  : Size of canvas
-* `color` (`string` , default `000000`)  : Color code of QR dots
-* `image` (`string`)  : The image will be copied to the center of the QR code
-
+* `value` (`string`) : The data will be encoded to the QR code
+* `width` (`number`, default `200`) : Size of canvas
+* `height` (`number`, default `200`) : Size of canvas
+* `color` (`string`, default `000000`) : Color code of QR dots
+* `offsetColor` (`string`, optional) : Gradient end color for the QR dots. If omitted, the component uses the existing auto-generated offset color derived from `color`.
+* `image` (`string`) : The image will be copied to the center of the QR code
