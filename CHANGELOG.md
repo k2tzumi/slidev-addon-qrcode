@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.0](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.21...v0.1.0) - 2026-10-11
+
+- feat: add offsetColor parameter to QRCode component and update example by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/55
+
 ## [v0.0.21](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.0.20...v0.0.21) - 2026-10-11
 
 - Bump actions/setup-node from 4 to 7 by @dependabot[bot] in https://github.com/k2tzumi/slidev-addon-qrcode/pull/47
