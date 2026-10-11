@@ -49,9 +49,32 @@ jobs:
               repo: context.repo.repo,
               tag: context.payload.inputs.tag
             });
+
             const packFile = '${{ steps.get-assets-file-name.outputs.packFile }}';
             const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), packFile);
             const fileContent = fs.readFileSync(filePath);
+
+            // List all assets, including subsequent pages.
+            const assets = await github.paginate(
+              github.rest.repos.listReleaseAssets,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.data.id,
+                per_page: 100,
+              }
+            );
+
+            // Delete an existing asset with the same name before uploading.
+            for (const asset of assets.filter(asset => asset.name === packFile)) {
+              core.info(`Deleting existing release asset: ${asset.name} (${asset.id})`);
+              await github.rest.repos.deleteReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                asset_id: asset.id,
+              });
+            }
+
             await github.rest.repos.uploadReleaseAsset({
               url: release.data.upload_url,
               headers: {
