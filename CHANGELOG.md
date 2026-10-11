@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.2](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.1.1...v0.1.2) - 2026-10-11
+
+- fix: improve node setup step and remove npm whoami verification by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/59
+
 ## [v0.1.1](https://github.com/k2tzumi/slidev-addon-qrcode/compare/v0.1.0...v0.1.1) - 2026-10-11
 
 - fix: delete existing release assets before uploading new ones by @k2tzumi in https://github.com/k2tzumi/slidev-addon-qrcode/pull/57
