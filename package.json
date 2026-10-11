@@ -26,8 +26,8 @@
   "devDependencies": {
     "@slidev/cli": "^53.0.0",
     "@slidev/theme-default": "^0.25.0",
-    "playwright-chromium": "^1.59.1",
-    "sass": "^1.99.0"
+    "playwright-chromium": "^1.63.0",
+    "sass": "^1.105.1"
   },
   "bugs": {
     "url": "https://github.com/k2tzumi/slidev-addon-qrcode/issues"
